@@ -1,0 +1,52 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+.photos{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr); /* 2 images in one row */
+    gap: 10px;
+    padding: 10px;
+}
+
+.photos img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.name{
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+}
+.date{
+    margin-right: auto;
+}
+.header{
+    background-color:rgb(238, 184, 255) ;
+    border-radius: 30px;
+}
+
+</style>
+    
+
+    <div class="photos">
+    <a href="img1.jpeg">
+        <img src="img1.jpeg">
+    </a>
+
+    <a href="img2.jpeg">
+        <img src="img2.jpeg">
+    </a>
+
+    <a href="img3.jpeg">
+        <img src="img3.jpeg">
+    </a>
+      
+</div>
+</body>
+</html>

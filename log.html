@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-image: url(harshitaa.jpg);
+    background-size: cover;
+    }
+    .main{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(218, 60, 165);
+    }
+    .nam{
+        text-align: center;
+        color: rgb(165, 9, 1);
+        font-size: 20px ;
+    }
+    
+    .name{
+        padding: 5px;
+        
+        background-color: rgb(255, 245, 232);
+    } 
+    .pass{
+        padding: 5px;
+        
+        background-color: rgb(252, 240, 224);
+        
+    }  
+    .btn{
+        padding: 5px;
+        background-color: rgb(255, 255, 167);
+        text-align: center;
+        flex-direction: column;
+        gap: 10 px;
+        box-shadow: 0 0 20px rgba(66, 58, 8, 0.7);
+            transition: 0.1s ease;
+    }
+    .text{
+       
+  display: flex;
+  flex-direction: column;    /* stack items vertically */
+  gap: 10px;                 /* space between inputs */
+  padding: 20px;
+  border: 2px solid #ccc;    /* optional border */
+  border-radius: 8px;
+  background-color: #fdfdfd; /* optional background */
+}
+.passs{
+    color: rgb(255, 127, 206);
+}
+
+
+</style>
+<body>
+    <div class="main"><h1>heyy this is photo gallery </h1>
+  
+    <div class="nam">
+        <h1>enter your name </h1>
+    </div>
+    <div class="passs">enter passward</div>
+</body> 
+<input type="text" class="name" id="name" placeholder="username">
+<input type="text" class="pass" id="pass" placeholder="passward">
+<button class="btn" id="btn" onclick="Login()">login</button>
+
+<script>
+    function Login(){
+        let user = document.getElementById('name').value;
+        let pass = document.getElementById('pass').value;
+        let btn = document.getElementById('btn');
+
+        let user_name = "garima";
+        let pass_word = "rathore";
+
+        if(user == user_name && pass == pass_word){
+            window.location.href="photo.html"
+        }
+        else if (user =="" && pass ==""){
+            btn.innerHTML ='fill the details'
+        }
+    }
+</script>
+</form>
+</html>
